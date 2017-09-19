@@ -1,0 +1,41 @@
+.navbar-title {
+    margin-left: 12px;
+    font-family: "Asap Condensed", "Helvetica";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#display {
+    padding: 16px;
+}
+
+.item-stack {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.item-stack > .stack-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#no-meal-name-message {
+    color: #e74c3c; /* red */
+    visibility: hidden;
+}
+
+#tag-holder {
+    padding: 4px;
+}
+
+#tag-holder > .tag {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#meal-output article.message {
+    width: 600px;
+}
+
+#meal-output .message-body {
+    padding: .5em;
+}

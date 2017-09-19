@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Asap+Condensed">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="mealicon.png" alt="What's For Dinner?" width="28" height="28">
+          <span class="navbar-title">What's for Dinner?</span>
+        </a>
+
+     <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Menu
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Tags - coming soon
+          </a>
+          <a class="navbar-item">
+            Meals - coming soon
+          </a>
+          <a class="navbar-item">
+            History - coming soon
+          </a>
+      </div>
+    </nav>
+
+    <section id="display" class="content item-stack">
+        <h4 class="title is-4">Input meal</h4>
+
+        <div class="stack-item">
+            <span>Meal name:</span>
+            <input id="meal-name-input" type="text"></input>
+            <span id="no-meal-name-message">Please enter a meal name.</span>
+        </div>
+
+        <div class="stack-item">
+            <span>Tags (comma separated):</span>
+            <input id="tag-input" type="text"></input>
+            <!--button class="button is-success is-small" onclick="setTags()">Add</button-->
+        </div>
+
+        <div class="stack-item">
+            <button class="button is-primary" onclick="checkMealName(); displayMeals()">Submit</button>
+        </div>
+
+        <br>
+        <br>
+
+        <h4 class="title is-4">Saved meals</h4>
+        <div id="meal-output"></div>
+    </section>
+
+</body>
+
+</html>
